@@ -5,6 +5,9 @@ let idx = 0
 let interval1
 let interval2
 $('#huya-ab').on('DOMNodeInserted',function(){
+    if($('#player-recommend > div.player-recommend-container > div.player-recommend-big-video > div').length > 0 ){
+        return
+    }
     doSomething()
     let beginTime = new Date().getTime()
     let endTime
